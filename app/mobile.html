@@ -77,6 +77,11 @@
                     try {
                         window.ReactNativeWebView.postMessage(JSON.stringify(data));
                     } catch (e) { }
+                    try{
+                        Message.postMessage(JSON.stringify(data))
+                    }
+                    catch(err)
+                    {}
                     
                 }
             },
